@@ -154,18 +154,27 @@
  &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI      &kp BKSP
  &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O         &kp QUOT
  &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
- &mo LGUI_COLEMAC   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
+ &kp LGUI   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
             >;
         };
-        lgui_colemac_layer {
-            label = "LguiColemac";
+        colemac_layer_2 {
+            label = "Colemac_2";
             bindings = <
- &kp LGUI(TAB)    &kp LGUI(Q)      &kp LGUI(W)      &kp LGUI(F)       &kp LGUI(P)          &kp LGUI(G)          &kp LGUI(J)            &kp LGUI(L)          &kp LGUI(U)       &kp LGUI(Y)            &kp LGUI(SEMI)      &macbkword
- &kp LGUI(ESC)    &kp LGUI(A)      &kp LGUI(R)      &kp LGUI(S)       &kp LGUI(T)          &kp LGUI(D)          &kp LGUI(H)            &kp LGUI(N)          &kp LGUI(E)       &kp LGUI(I)            &kp LGUI(O)         &kp LGUI(QUOT)
- &kp LGUI(LSHFT)  &kp LGUI(Z)      &kp LGUI(X)      &kp LGUI(C)       &kp LGUI(V)          &kp LGUI(B)          &kp LGUI(K)            &kp LGUI(M)          &kp LGUI(COMMA)   &kp LGUI(DOT)          &kp LGUI(FSLH)      &kp LGUI(RSHFT)
- &trans           &kp LGUI(LCTRL)  &kp LGUI(LALT)   &trans            &trans               &kp LGUI(SPACE)      &kp LGUI(SPACE)        &trans               &trans            &trans                 &kp LGUI(HASH)      &kp LGUI(RET)
+ &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI      &kp BKSP
+ &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O         &kp QUOT
+ &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
+ &kp LGUI   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
             >;
         };
+//         lgui_colemac_layer {
+//             label = "LguiColemac";
+//             bindings = <
+//  &kp LGUI(TAB)    &kp LGUI(Q)      &kp LGUI(W)      &kp LGUI(F)       &kp LGUI(P)          &kp LGUI(G)          &kp LGUI(J)            &kp LGUI(L)          &kp LGUI(U)       &kp LGUI(Y)            &kp LGUI(SEMI)      &macbkword
+//  &kp LGUI(ESC)    &kp LGUI(A)      &kp LGUI(R)      &kp LGUI(S)       &kp LGUI(T)          &kp LGUI(D)          &kp LGUI(H)            &kp LGUI(N)          &kp LGUI(E)       &kp LGUI(I)            &kp LGUI(O)         &kp LGUI(QUOT)
+//  &kp LGUI(LSHFT)  &kp LGUI(Z)      &kp LGUI(X)      &kp LGUI(C)       &kp LGUI(V)          &kp LGUI(B)          &kp LGUI(K)            &kp LGUI(M)          &kp LGUI(COMMA)   &kp LGUI(DOT)          &kp LGUI(FSLH)      &kp LGUI(RSHFT)
+//  &trans           &kp LGUI(LCTRL)  &kp LGUI(LALT)   &trans            &trans               &kp LGUI(SPACE)      &kp LGUI(SPACE)        &trans               &trans            &trans                 &kp LGUI(HASH)      &kp LGUI(RET)
+//             >;
+//         };
         qwerty_layer {
             label = "Qwerty";
             bindings = <
