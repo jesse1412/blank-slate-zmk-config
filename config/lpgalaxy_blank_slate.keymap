@@ -160,10 +160,10 @@
         lgui_colemac_layer {
             label = "LguiColemac";
             bindings = <
- &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI      &macbkword
- &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O         &kp QUOT
- &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
- &kp LGUI   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
+ &kp TAB            &kp LG(Q)      &kp LG(W)      &kp LG(F)       &kp LG(P)          &kp LG(G)          &kp LG(J)            &kp LG(L)          &kp LG(U)       &kp LG(Y)            &kp SEMI      &macbkword
+ &kp ESC            &kp LG(A)      &kp LG(R)      &kp LG(S)       &kp LG(T)          &kp LG(D)          &kp LG(H)            &kp LG(N)          &kp LG(E)       &kp LG(I)            &kp LG(O)     &kp QUOT
+ &kp LSHFT          &kp LG(Z)      &kp LG(X)      &kp LG(C)       &kp LG(V)          &kp LG(B)          &kp LG(K)            &kp LG(M)          &kp COMMA       &kp DOT              &kp FSLH      &kp RSHFT
+ &trans             &kp LCTRL      &kp LALT       &mo NAV_MAC     &mo LOWER_MAC      &kp SPACE          &kp SPACE            &mo RAISE_MAC      &mo KEYPAD      &mo KEYPAD_SHIFT     &kp HASH      &kp RET
             >;
         };
         qwerty_layer {
