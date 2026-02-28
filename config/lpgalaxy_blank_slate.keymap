@@ -142,19 +142,19 @@
         colemak_layer {
             label = "Colemak";
             bindings = <
- &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI      &kp BKSP
- &kp ESC    &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O         &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
- &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV     &mo LOWER      &kp SPACE      &kp SPACE        &mo RAISE      &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
+ &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI        &kp BKSP
+ &kp ESC    &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O           &kp QUOT
+ &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH        &kp RSHFT
+ &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV     &mo LOWER      &kp SPACE      &kp SPACE        &mo RAISE      &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
             >;
         };
         colemac_layer {
             label = "Colemac";
             bindings = <
- &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI      &kp BKSP
- &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O         &kp QUOT
- &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
- &mo LGUI_COLEMAC   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
+ &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI        &kp BKSP
+ &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O           &kp QUOT
+ &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH        &kp RSHFT
+ &mo LGUI_COLEMAC   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
             >;
         };
         lgui_colemac_layer {
@@ -169,10 +169,10 @@
         qwerty_layer {
             label = "Qwerty";
             bindings = <
- &kp TAB    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O            &kp P         &kp BKSP
- &kp ESC    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L            &kp SEMI      &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT          &kp FSLH      &kp RSHFT
- &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV     &mo LOWER      &kp SPACE      &kp SPACE        &mo RAISE      &mo KEYPAD  &mo KEYPAD_SHIFT &kp HASH      &kp RET
+ &kp TAB    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O            &kp P           &kp BKSP
+ &kp ESC    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L            &kp SEMI        &kp QUOT
+ &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT          &kp FSLH        &kp RSHFT
+ &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV     &mo LOWER      &kp SPACE      &kp SPACE        &mo RAISE      &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
             >;
         };
         osrs_layer {
