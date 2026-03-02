@@ -79,28 +79,6 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
-        // macpip: macpip {
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&macro_press &kp LSHFT>
-        //         , <&macro_press  &kp GRAVE>
-        //         , <&macro_pause_for_release>
-        //         , <&macro_release &kp LSHFT>
-        //         , <&macro_release &kp GRAVE>
-        //         ;
-        // };
-        // macbkword: macbkword {
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&macro_press &kp LALT>
-        //         , <&macro_press &kp BSPC>
-        //         , <&macro_pause_for_release>
-        //         , <&macro_release &kp BSPC>
-        //         , <&macro_release &kp LALT>
-        //         ;
-        // };
         shtclk: shtclk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -114,25 +92,6 @@
         };
     };
     
-    // combos {
-    //     compatible = "zmk,combos";
-    //     combo_macbksp {
-    //         timeout-ms = <50>;
-    //         key-positions = <0 1>;
-    //         bindings = <&kp ESC>;
-    //     };
-    // };
-
-    // tap_dances {
-    // 	shifty: shift_caps_word {
-    //         compatible = "zmk,behavior-tap-dance";
-    //         label = "TD_SHIFTY";
-    //         #binding-cells = <0>;
-    //         tapping-term-ms = <150>;
-    //         bindings = <&kp LSHFT>, <&caps_word>;
-	//     };
-    // };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         low_raise {
@@ -174,15 +133,6 @@
  &kp LGUI           &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
             >;
         };
-//         lgui_colemac_layer {
-//             label = "LguiColemac";
-//             bindings = <
-//  &kp LG(TAB)        &kp LG(Q)      &kp LG(W)      &kp LG(F)       &kp LG(P)          &kp LG(G)          &kp LG(J)            &kp LG(L)          &kp LG(U)       &kp LG(Y)            &kp LG(SEMI)      &macbkword
-//  &kp LG(ESC)        &kp LG(A)      &kp LG(R)      &kp LG(S)       &kp LG(T)          &kp LG(D)          &kp LG(H)            &kp LG(N)          &kp LG(E)       &kp LG(I)            &kp LG(O)         &kp LG(QUOT)
-//  &kp LG(LSHFT)      &kp LG(Z)      &kp LG(X)      &kp LG(C)       &kp LG(V)          &kp LG(B)          &kp LG(K)            &kp LG(M)          &kp LG(COMMA)   &kp LG(DOT)          &kp LG(FSLH)      &kp LG(RSHFT)
-//  &trans             &kp LG(LCTRL)  &kp LG(LALT)   &trans          &trans             &kp LG(SPACE)      &kp LG(SPACE)        &trans             &trans          &trans               &kp LG(HASH)      &kp LG(RET)
-//             >;
-//         };
         qwerty_layer {
             label = "Qwerty";
             bindings = <
