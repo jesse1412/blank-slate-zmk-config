@@ -48,6 +48,15 @@
        zmk,physical-layout = &layout_ortho_4x12_all1u;
     };
 
+    behaviors {
+        macbkword: macbkword {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+            mods = <(MOD_LGUI)>;
+        };
+    };
+
     macros {
         ctlsht: ctlsht {
             compatible = "zmk,behavior-macro";
@@ -82,17 +91,17 @@
         //         , <&macro_release &kp GRAVE>
         //         ;
         // };
-        macbkword: macbkword {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_press &kp BSPC>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp BSPC>
-                , <&macro_release &kp LALT>
-                ;
-        };
+        // macbkword: macbkword {
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LALT>
+        //         , <&macro_press &kp BSPC>
+        //         , <&macro_pause_for_release>
+        //         , <&macro_release &kp BSPC>
+        //         , <&macro_release &kp LALT>
+        //         ;
+        // };
         shtclk: shtclk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -160,21 +169,21 @@
         colemac_layer {
             label = "Colemac";
             bindings = <
- &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI        &kp BKSP
+ &kp TAB            &kp Q      &kp W      &kp F       &kp P          &kp G          &kp J            &kp L          &kp U       &kp Y            &kp SEMI        &macbkword
  &kp ESC            &kp A      &kp R      &kp S       &kp T          &kp D          &kp H            &kp N          &kp E       &kp I            &kp O           &kp QUOT
  &kp LSHFT          &kp Z      &kp X      &kp C       &kp V          &kp B          &kp K            &kp M          &kp COMMA   &kp DOT          &kp FSLH        &kp RSHFT
- &mo LGUI_COLEMAC   &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
+ &kp LGUI           &kp LCTRL  &kp LALT   &mo NAV_MAC &mo LOWER_MAC  &kp SPACE      &kp SPACE        &mo RAISE_MAC  &mo KEYPAD  &mo KEYPAD_SHIFT &kp NON_US_HASH &kp RET
             >;
         };
-        lgui_colemac_layer {
-            label = "LguiColemac";
-            bindings = <
- &kp LG(TAB)        &kp LG(Q)      &kp LG(W)      &kp LG(F)       &kp LG(P)          &kp LG(G)          &kp LG(J)            &kp LG(L)          &kp LG(U)       &kp LG(Y)            &kp LG(SEMI)      &macbkword
- &kp LG(ESC)        &kp LG(A)      &kp LG(R)      &kp LG(S)       &kp LG(T)          &kp LG(D)          &kp LG(H)            &kp LG(N)          &kp LG(E)       &kp LG(I)            &kp LG(O)         &kp LG(QUOT)
- &kp LG(LSHFT)      &kp LG(Z)      &kp LG(X)      &kp LG(C)       &kp LG(V)          &kp LG(B)          &kp LG(K)            &kp LG(M)          &kp LG(COMMA)   &kp LG(DOT)          &kp LG(FSLH)      &kp LG(RSHFT)
- &trans             &kp LG(LCTRL)  &kp LG(LALT)   &trans          &trans             &kp LG(SPACE)      &kp LG(SPACE)        &trans             &trans          &trans               &kp LG(HASH)      &kp LG(RET)
-            >;
-        };
+//         lgui_colemac_layer {
+//             label = "LguiColemac";
+//             bindings = <
+//  &kp LG(TAB)        &kp LG(Q)      &kp LG(W)      &kp LG(F)       &kp LG(P)          &kp LG(G)          &kp LG(J)            &kp LG(L)          &kp LG(U)       &kp LG(Y)            &kp LG(SEMI)      &macbkword
+//  &kp LG(ESC)        &kp LG(A)      &kp LG(R)      &kp LG(S)       &kp LG(T)          &kp LG(D)          &kp LG(H)            &kp LG(N)          &kp LG(E)       &kp LG(I)            &kp LG(O)         &kp LG(QUOT)
+//  &kp LG(LSHFT)      &kp LG(Z)      &kp LG(X)      &kp LG(C)       &kp LG(V)          &kp LG(B)          &kp LG(K)            &kp LG(M)          &kp LG(COMMA)   &kp LG(DOT)          &kp LG(FSLH)      &kp LG(RSHFT)
+//  &trans             &kp LG(LCTRL)  &kp LG(LALT)   &trans          &trans             &kp LG(SPACE)      &kp LG(SPACE)        &trans             &trans          &trans               &kp LG(HASH)      &kp LG(RET)
+//             >;
+//         };
         qwerty_layer {
             label = "Qwerty";
             bindings = <
