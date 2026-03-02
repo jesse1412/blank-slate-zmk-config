@@ -18,20 +18,19 @@
 // Layers
 #define COLEMAK 0
 #define COLEMAC 1
-#define LGUI_COLEMAC 2
-#define QWERTY 3
-#define OSRS 4
-#define NAV 5
-#define NAV_MAC 6
-#define KEYPAD 7
-#define KEYPAD_SHIFT 8
-#define RAISE 9
-#define RAISE_MAC 10
-#define MOUSE 11
-#define MOUSE_SLOW 12
-#define LOWER 13
-#define LOWER_MAC 14
-#define ADJUST 15
+#define QWERTY 2
+#define OSRS 3
+#define NAV 4
+#define NAV_MAC 5
+#define KEYPAD 6
+#define KEYPAD_SHIFT 7
+#define RAISE 8
+#define RAISE_MAC 9
+#define MOUSE 10
+#define MOUSE_SLOW 11
+#define LOWER 12
+#define LOWER_MAC 13
+#define ADJUST 14
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
